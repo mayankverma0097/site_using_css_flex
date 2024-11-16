@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,13 +9,15 @@ body {
 }
 
 nav {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
   background-color: black;
   color: whitesmoke;
+  height: 50px;
+  
 }
 nav img{
     width: 40px;
@@ -35,7 +38,7 @@ nav ul li:hover{
 }
 
 #Main {
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-color: black;
   display: flex;
 }
@@ -43,7 +46,8 @@ nav ul li:hover{
 #First {
   width: 50%;
   height: 100%;
-  background-image: url('./assets/images/img1.gif');
+  background-image: url('./assets/images/img1.gif');  
+  /* github does not support "" in url */
   background-position: center;
   background-repeat: no-repeat;
   /* border: 1px solid white; */
